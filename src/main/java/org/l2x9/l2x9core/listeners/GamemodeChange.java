@@ -1,4 +1,4 @@
-package org.l2x9.l2x9core.alerts;
+package org.l2x9.l2x9core.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

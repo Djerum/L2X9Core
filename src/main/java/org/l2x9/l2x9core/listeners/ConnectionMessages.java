@@ -1,4 +1,4 @@
-package org.l2x9.l2x9core.events;
+package org.l2x9.l2x9core.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
