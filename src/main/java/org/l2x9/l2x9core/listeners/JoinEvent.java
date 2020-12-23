@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerKickEvent;
+import org.bukkit.event.player.PlayerKicEvent;
 import org.bukkit.potion.PotionEffect;
 import org.l2x9.l2x9core.Main;
 import org.l2x9.l2x9core.util.Utils;
@@ -24,7 +24,7 @@ public class JoinEvent implements Listener {
 			Player player = e.getPlayer();
 			if (player.getActivePotionEffects() != null) {
 				for (PotionEffect effects : player.getActivePotionEffects()) {
-					if (effects.getAmplifier() > 5) {
+					if (effects.getAmplifier() > 30) {
 						player.removePotionEffect(effects.getType());
 					}
 				}
